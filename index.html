@@ -232,8 +232,8 @@
                 <select id="filter-cliente"><option value="Todos">Todos</option></select>
             </div>
             <div class="filter-group">
-                <label><i class="fa-solid fa-user-nurse"></i> Manicurista</label>
-                <select id="filter-manicurista"><option value="Todos">Todos</option></select>
+                <label><i class="fa-solid fa-user-nurse"></i> Estilista</label>
+                <select id="filter-estilista"><option value="Todos">Todos</option></select>
             </div>
             <div class="filter-group">
                 <label><i class="fa-solid fa-spa"></i> Servicio</label>
@@ -325,7 +325,7 @@
 
     <script>
         // HARDCODED EXCEL DATA
-        const sheetJsonData = [{"ID":"000-4","Fecha":"05/05/2026","Cliente":"Abigail Andrade","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"4.50","Tiempo Demorado en el servicio (minutos)":"130","Cumplimiento del protoco":"90.00%","Calidad del acabado final":"4.00"},{"ID":"000-4","Fecha":"06/05/2026","Cliente":"María Ube","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"5.00","Tiempo Demorado en el servicio (minutos)":"110","Cumplimiento del protoco":"95%","Calidad del acabado final":"5.00"},{"ID":"000-4","Fecha":"07/05/2026","Cliente":"Elena Villacis","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"4.00","Tiempo Demorado en el servicio (minutos)":"140","Cumplimiento del protoco":"80.00%","Calidad del acabado final":"4.00"},{"ID":"000-4","Fecha":"08/05/2026","Cliente":"Alexa Macías","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"5.00","Tiempo Demorado en el servicio (minutos)":"105","Cumplimiento del protoco":"100%","Calidad del acabado final":"5.00"},{"ID":"000-4","Fecha":"09/05/2026","Cliente":"Verónica Hermida","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"4.20","Tiempo Demorado en el servicio (minutos)":"125","Cumplimiento del protoco":"85%","Calidad del acabado final":"3.00"},{"ID":"000-4","Fecha":"11/05/2026","Cliente":"Elizabeth Sánchez","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"3.20","Tiempo Demorado en el servicio (minutos)":"130","Cumplimiento del protoco":"87.50%","Calidad del acabado final":"3.00"},{"ID":"000-4","Fecha":"11/05/2026","Cliente":"Leonor Gómez","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"4.10","Tiempo Demorado en el servicio (minutos)":"120","Cumplimiento del protoco":"90.00%","Calidad del acabado final":"4.00"},{"ID":"000-4","Fecha":"11/05/2026","Cliente":"Natasha Morán","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"4.00","Tiempo Demorado en el servicio (minutos)":"140","Cumplimiento del protoco":"70.00%","Calidad del acabado final":"4.00"},{"ID":"000-4","Fecha":"12/05/2026","Cliente":"Cinthya Alvarado","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"5.00","Tiempo Demorado en el servicio (minutos)":"110","Cumplimiento del protoco":"100.00%","Calidad del acabado final":"5.00"},{"ID":"000-4","Fecha":"13/05/2026","Cliente":"Cristina Alvarado","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"4.90","Tiempo Demorado en el servicio (minutos)":"115","Cumplimiento del protoco":"92.50%","Calidad del acabado final":"5.00"},{"ID":"000-4","Fecha":"13/05/2026","Cliente":"Lucía Maldonado","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"4.80","Tiempo Demorado en el servicio (minutos)":"120","Cumplimiento del protoco":"92.50%","Calidad del acabado final":"5.00"},{"ID":"000-4","Fecha":"14/05/2026","Cliente":"Linda Pluas","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"4.50","Tiempo Demorado en el servicio (minutos)":"120","Cumplimiento del protoco":"85.00%","Calidad del acabado final":"4.00"},{"ID":"000-4","Fecha":"14/05/2026","Cliente":"Estefania Bonozo","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"3.70","Tiempo Demorado en el servicio (minutos)":"135","Cumplimiento del protoco":"85.00%","Calidad del acabado final":"4.00"},{"ID":"000-4","Fecha":"15/05/2026","Cliente":"Iris Gutierrez ","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"4.50","Tiempo Demorado en el servicio (minutos)":"125","Cumplimiento del protoco":"82.50%","Calidad del acabado final":"4.00"},{"ID":"000-4","Fecha":"15/05/2026","Cliente":"Melanie Rugel","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"5.00","Tiempo Demorado en el servicio (minutos)":"125","Cumplimiento del protoco":"90.00%","Calidad del acabado final":"5.00"},{"ID":"000-4","Fecha":"16/05/2026","Cliente":"Monica Lasso","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"4.30","Tiempo Demorado en el servicio (minutos)":"135","Cumplimiento del protoco":"82.50%","Calidad del acabado final":"5.00"},{"ID":"000-4","Fecha":"16/05/2026","Cliente":"Mariela Jiménez ","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"4.70","Tiempo Demorado en el servicio (minutos)":"130","Cumplimiento del protoco":"90.00%","Calidad del acabado final":"4.00"},{"ID":"000-4","Fecha":"17/05/2026","Cliente":"Alexa Conforme","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"5.00","Tiempo Demorado en el servicio (minutos)":"120","Cumplimiento del protoco":"97.50%","Calidad del acabado final":"5.00"},{"ID":"000-4","Fecha":"17/05/2026","Cliente":"Amelia Carrasco ","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"4.70","Tiempo Demorado en el servicio (minutos)":"120","Cumplimiento del protoco":"87.50%","Calidad del acabado final":"4.00"},{"ID":"000-4","Fecha":"18/05/2026","Cliente":"Arianna","Manicurista":"Génesis Balla","Servicio":"Uñas acrílicas baby boomer","Nivel de satisfacción del cliente\n(de 1 a 5)\n1: Muy Insatisfecho\n2: Insatisfecho \n3: Neutral\n4: Satisfecho \n5: Muy satisfecho":"3.90","Tiempo Demorado en el servicio (minutos)":"130","Cumplimiento del protoco":"87.50%","Calidad del acabado final":"4.00"}];
+        const sheetJsonData = [{"ID": "SC-001", "Fecha": "28/04/2026", "Cliente": "Dayanna Morán ", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 4.8, "Tiempo Demorado en el servicio (minutos)": 90, "Cumplimiento del protoco": 0.9777777777777777, "Calidad del acabado final": 5, "": null}, {"ID": "SC-001", "Fecha": "28/04/2026", "Cliente": "Gianella Negrete", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 4.1, "Tiempo Demorado en el servicio (minutos)": 180, "Cumplimiento del protoco": 0.9555555555555556, "Calidad del acabado final": 4, "": null}, {"ID": "SC-001", "Fecha": "01/05/2026", "Cliente": "Karla Guaman", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 3.4, "Tiempo Demorado en el servicio (minutos)": 180, "Cumplimiento del protoco": 0.8666666666666667, "Calidad del acabado final": 4, "": null}, {"ID": "SC-001", "Fecha": "01/05/2026", "Cliente": "Génesis Villao", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 4.0, "Tiempo Demorado en el servicio (minutos)": 120, "Cumplimiento del protoco": 1.0, "Calidad del acabado final": 5, "": null}, {"ID": "SC-001", "Fecha": "02/05/2026", "Cliente": "Susana Bernita", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 3.1, "Tiempo Demorado en el servicio (minutos)": 90, "Cumplimiento del protoco": 0.8222222222222222, "Calidad del acabado final": 5, "": null}, {"ID": "SC-001", "Fecha": "02/05/2026", "Cliente": "Amalia Solis", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 5.0, "Tiempo Demorado en el servicio (minutos)": 180, "Cumplimiento del protoco": 0.8444444444444444, "Calidad del acabado final": 5, "": null}, {"ID": "SC-001", "Fecha": "03/05/2026", "Cliente": "Nicole Morán", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 1.7, "Tiempo Demorado en el servicio (minutos)": 120, "Cumplimiento del protoco": 0.8888888888888888, "Calidad del acabado final": 2, "": null}, {"ID": "SC-001", "Fecha": "03/05/2026", "Cliente": "Celeste Mejia", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 3.1, "Tiempo Demorado en el servicio (minutos)": 90, "Cumplimiento del protoco": 0.9111111111111111, "Calidad del acabado final": 3, "": null}, {"ID": "SC-001", "Fecha": "06/05/2026", "Cliente": "Roxana Narváez", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 5.0, "Tiempo Demorado en el servicio (minutos)": 90, "Cumplimiento del protoco": 1.0, "Calidad del acabado final": 5, "": null}, {"ID": "SC-001", "Fecha": "07/05/2026", "Cliente": "Kerly Carranza ", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 1.4, "Tiempo Demorado en el servicio (minutos)": 360, "Cumplimiento del protoco": 0.9111111111111111, "Calidad del acabado final": 1, "": null}, {"ID": "SC-001", "Fecha": "08/05/2026", "Cliente": "Elizabeth Cevallos", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 3.1, "Tiempo Demorado en el servicio (minutos)": 90, "Cumplimiento del protoco": 0.9111111111111111, "Calidad del acabado final": 4, "": null}, {"ID": "SC-001", "Fecha": "08/05/2026", "Cliente": "Linda Medina", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 3.5, "Tiempo Demorado en el servicio (minutos)": 240, "Cumplimiento del protoco": 0.8444444444444444, "Calidad del acabado final": 3, "": null}, {"ID": "SC-001", "Fecha": "10/05/2026", "Cliente": "Sofia Guevara", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 5.0, "Tiempo Demorado en el servicio (minutos)": 240, "Cumplimiento del protoco": 0.8666666666666667, "Calidad del acabado final": 5, "": null}, {"ID": "SC-001", "Fecha": "11/05/2026", "Cliente": "Génesis Cordova", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 3.0, "Tiempo Demorado en el servicio (minutos)": 240, "Cumplimiento del protoco": 0.8222222222222222, "Calidad del acabado final": 3, "": null}, {"ID": "SC-001", "Fecha": "12/05/2026", "Cliente": "Evelyn Pacheco", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 3.8, "Tiempo Demorado en el servicio (minutos)": 240, "Cumplimiento del protoco": 0.9111111111111111, "Calidad del acabado final": 4, "": null}, {"ID": "SC-001", "Fecha": "13/05/2026", "Cliente": "Milena Naula", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 3.3, "Tiempo Demorado en el servicio (minutos)": 240, "Cumplimiento del protoco": 0.8888888888888888, "Calidad del acabado final": 5, "": null}, {"ID": "SC-001", "Fecha": "15/05/2026", "Cliente": "Maria Torres", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 3.7, "Tiempo Demorado en el servicio (minutos)": 180, "Cumplimiento del protoco": 0.9555555555555556, "Calidad del acabado final": 3, "": null}, {"ID": "SC-001", "Fecha": "18/05/2026", "Cliente": "Ana Barrio", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 5.0, "Tiempo Demorado en el servicio (minutos)": 180, "Cumplimiento del protoco": 0.9777777777777777, "Calidad del acabado final": 5, "": null}, {"ID": "SC-001", "Fecha": "19/05/2026", "Cliente": "Arelis Carranza", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 5.0, "Tiempo Demorado en el servicio (minutos)": 180, "Cumplimiento del protoco": 0.8888888888888888, "Calidad del acabado final": 5, "": null}, {"ID": "SC-001", "Fecha": "20/05/2026", "Cliente": "Dariana Muñoz", "Estilista": "Alexandra Naula", "Servicio": "Aplicación de keratina capilar (tratamiento alisante)						", "Promedio del Nivel de satisfacción del cliente": 5.0, "Tiempo Demorado en el servicio (minutos)": 240, "Cumplimiento del protoco": 0.8888888888888888, "Calidad del acabado final": 5, "": null}];
 
         let rawData = [];
         let filteredData = [];
@@ -339,7 +339,7 @@
         document.getElementById('filter-date-start').addEventListener('change', applyFilters);
         document.getElementById('filter-date-end').addEventListener('change', applyFilters);
         document.getElementById('filter-cliente').addEventListener('change', applyFilters);
-        document.getElementById('filter-manicurista').addEventListener('change', applyFilters);
+        document.getElementById('filter-estilista').addEventListener('change', applyFilters);
         document.getElementById('filter-servicio').addEventListener('change', applyFilters);
 
         function init() {
@@ -384,7 +384,7 @@
                     }
                 });
 
-                if (parsedRow.Cliente && parsedRow.Manicurista && parsedRow.Servicio) {
+                if (parsedRow.Cliente && parsedRow.Estilista && parsedRow.Servicio) {
                     rawData.push(parsedRow);
                 }
             });
@@ -396,15 +396,15 @@
 
         function populateFilterOptions() {
             const clientes = [...new Set(rawData.map(d => d.Cliente))].sort();
-            const manicuristas = [...new Set(rawData.map(d => d.Manicurista))].sort();
+            const estilistas = [...new Set(rawData.map(d => d.Estilista))].sort();
             const servicios = [...new Set(rawData.map(d => d.Servicio))].sort();
 
             const pCliente = document.getElementById('filter-cliente');
-            const pManic = document.getElementById('filter-manicurista');
+            const pEstilista = document.getElementById('filter-estilista');
             const pServ = document.getElementById('filter-servicio');
 
             pCliente.innerHTML = '<option value="Todos">Todos</option>' + clientes.map(c => `<option value="${c}">${c}</option>`).join('');
-            pManic.innerHTML = '<option value="Todos">Todos</option>' + manicuristas.map(c => `<option value="${c}">${c}</option>`).join('');
+            pEstilista.innerHTML = '<option value="Todos">Todos</option>' + estilistas.map(c => `<option value="${c}">${c}</option>`).join('');
             pServ.innerHTML = '<option value="Todos">Todos</option>' + servicios.map(c => `<option value="${c}">${c}</option>`).join('');
 
             if(rawData.length > 0) {
@@ -418,17 +418,17 @@
 
         function applyFilters() {
             const cliente = document.getElementById('filter-cliente').value;
-            const manicurista = document.getElementById('filter-manicurista').value;
+            const estilista = document.getElementById('filter-estilista').value;
             const servicio = document.getElementById('filter-servicio').value;
             const startDate = new Date(document.getElementById('filter-date-start').value + 'T00:00:00');
             const endDate = new Date(document.getElementById('filter-date-end').value + 'T23:59:59');
 
             filteredData = rawData.filter(d => {
                 const matchC = cliente === 'Todos' || d.Cliente === cliente;
-                const matchM = manicurista === 'Todos' || d.Manicurista === manicurista;
+                const matchE = estilista === 'Todos' || d.Estilista === estilista;
                 const matchS = servicio === 'Todos' || d.Servicio === servicio;
                 const matchD = d.fechaObj >= startDate && d.fechaObj <= endDate;
-                return matchC && matchM && matchS && matchD;
+                return matchC && matchE && matchS && matchD;
             });
             renderDashboard();
         }
@@ -507,6 +507,7 @@
                 },
                 options: {
                     responsive: true, maintainAspectRatio: false,
+                    layout: { padding: { top: 25, bottom: 10 } },
                     plugins: {
                         legend: { display: false },
                         datalabels: {
@@ -514,7 +515,7 @@
                             font: { size: 10, weight: 'bold' }
                         }
                     },
-                    scales: { y: { min: 3, max: 5 } }
+                    scales: { y: { min: 1, max: 5.2 } }
                 }
             });
         }
@@ -538,6 +539,7 @@
                 },
                 options: {
                     responsive: true, maintainAspectRatio: false,
+                    layout: { padding: { top: 25 } },
                     plugins: {
                         legend: { display: false },
                         datalabels: {
@@ -545,7 +547,7 @@
                             color: '#3F5B46', font: { size: 10, weight: 'bold' }
                         }
                     },
-                    scales: { y: { beginAtZero: true, max: 200 } }
+                    scales: { y: { beginAtZero: true } }
                 }
             });
         }
